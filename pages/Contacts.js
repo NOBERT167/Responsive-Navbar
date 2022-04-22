@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+
 
 export default function Contacts() {
   return (
@@ -8,11 +9,11 @@ export default function Contacts() {
       </header>
       <main className="px-10 mt-5 text-2xl text-green-900 text-left">
         <address>
-            <p>Phone: 629-009-3829</p>
-            <p>Email: emailus@email.com</p>
-            <p>Address: 69, Spook Ave, Mulholand Drive, TX 39039820</p>
+          <p>Phone: 629-009-3829</p>
+          <p>Email: emailus@email.com</p>
+          <p>Address: 69, Spook Ave, Mulholand Drive, TX 39039820</p>
         </address>
       </main>
     </>
-  )
+  );
 }
