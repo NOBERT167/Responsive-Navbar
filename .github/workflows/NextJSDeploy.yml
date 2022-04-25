@@ -34,7 +34,7 @@ jobs:
       run: npm run build
       
     - name: Exporting my App
-      run: npm run export
+      run: npm run export && touch ./out/.nojekyll
       
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.0
