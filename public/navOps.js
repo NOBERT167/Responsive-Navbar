@@ -16,8 +16,8 @@ function makeHiddenNav () {
     if (collapseLink.classList.contains("absolute")) {
         collapseLink.classList.add("hidden");
     }
-    menuIcon.classList.toggle("hidden");
-    crossIcon.classList.toggle("hidden");
+    menuIcon.classList.add("hidden");
+    crossIcon.classList.add("hidden");
 }
 
 // Attaching the listeners.
