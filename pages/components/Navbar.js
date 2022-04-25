@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Script from "next/script";
 import React from "react";
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 export default function Navbar() {
     
@@ -39,15 +41,14 @@ export default function Navbar() {
       </section>
 
       <section className="flex flex-col justify-end p-5 md:hidden">
-        <span className="material-symbols-outlined" id="menuIcon">
-          menu
-        </span>
-        <span className="material-symbols-outlined hidden" id="crossIcon">
+        <MenuIcon className="menu" id="menuIcon" />
+        <CloseIcon className="hidden" id="crossIcon" />
+        {/* <span className="material-symbols-outlined hidden" id="crossIcon">
           close
-        </span>
+        </span> */}
       </section>
 
-      <Script src="sc.js" strategy="lazyOnload" />
+      <Script src="navOps.js" strategy="lazyOnload" />
     </nav>
   );
 }

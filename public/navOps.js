@@ -3,7 +3,6 @@ let navLinks = document.querySelectorAll("#collapseLink li");
 let menuIcon = document.querySelector("#menuIcon");
 let crossIcon = document.querySelector("#crossIcon");
 
-console.log(navLinks);
 
 // Toggle Menu Icon and Cross Icons alternatively.
 function toggleIcons () {
@@ -17,6 +16,8 @@ function makeHiddenNav () {
     if (collapseLink.classList.contains("absolute")) {
         collapseLink.classList.add("hidden");
     }
+    menuIcon.classList.toggle("hidden");
+    crossIcon.classList.toggle("hidden");
 }
 
 // Attaching the listeners.
